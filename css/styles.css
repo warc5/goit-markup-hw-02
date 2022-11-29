@@ -8,11 +8,9 @@
 
 .body {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-        font-size: 16px;
         letter-spacing: 0.02em;
         color: var(--brand-color);
+        background-color: #FFFFFF;
 }
 
 .contact-link {
@@ -24,6 +22,18 @@
     color: var(--primary-brand);
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 .web {
 
@@ -92,6 +102,7 @@ background-color: var(--dark);
 }
 
 .button-portfolio {
+    font-family: 'Roboto';
     background: var(--light);
     font-weight: 500;
         font-size: 16px;
@@ -100,7 +111,7 @@ background-color: var(--dark);
         color: var(--primary-brand);
 }
 
-.button-portfolio:hover, .button-portfolio:hover {
+.button-portfolio:hover, .button-portfolio:focus {
 background-color: var(--primary-brand);
 color: #FFFFFF;
 }
@@ -108,7 +119,7 @@ color: #FFFFFF;
 .button-service {
     width: 170px;
         height: 51px;
-    background: #404BBF;
+    background: var(--primary-brand);
     color: #FFFFFF;
     font-weight: 600;
         font-size: 16px;
@@ -118,12 +129,12 @@ color: #FFFFFF;
 
 .button-service:hover, 
 .button-service:focus {
-    background: var(--primary-brand);
+background: #404BBF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .button-service:active {
-    background: var(--primary-brand);
+    background: #404BBF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -159,6 +170,10 @@ a[href] {
     list-style: none;
 }
 
-.header-hidden {
-    visibility: hidden;
+.our-team {
+    background-color: var(--light);
+}
+
+.team {
+    background-color: #FFFFFF;
 }
